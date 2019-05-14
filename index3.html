@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+
+
+</script>
+</head>
+<body>
+  <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+  <img src="assets/buttons/bigpuddle.png" class="bigpuddle"  id="buttonclick" onclick="onClick()">
+
+  <div id="gemAndCalle">Exactly! rock beats the scissor, scissor beats the paper, and the paper beats the rock again.</div>
+
+
+    <video autoplay muted loop id="myVideo">
+    <source src="assets/videos/sky.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel2.js"></script>
+
+<script>
+var clicks = 0;
+var linkOne = `<a href="rock.html" onclick="javascript:void window.open('http://www.umop.com/rps101/rps101chart.html','pu5','width=945,height=990,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">Here</a>`;
+var linkTwo = `<a href="rock.html" onclick="javascript:void window.open('dice.html','popup','width=1245,height=990,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;"> three</a>`;
+
+
+
+ function onClick() {
+   clicks += 1;
+   var message = "";
+   if(clicks==1)
+     { message = "Have you heard about the extended version?";}
+else if(clicks==2)
+   {message ="No what?";}
+else if(clicks==3)
+   {message ="A guy made a version of rock, paper and scissor with 101 versions. " + linkOne + ", look at the chart.";}
+else if(clicks==4)
+     {message = "Thats insane";}
+else if(clicks==5)
+     {message = "I know. He says it was a year long passion project. Another good example is the Non-transitive Dice";}
+else if(clicks==6)
+     {message = "I havent heard of it.";}
+else if(clicks==7)
+     {message = "It's actually a set of " + linkTwo + " dices"}
+
+   document.getElementById("gemAndCalle").innerHTML = message;
+
+
+ };
+</script>
+
+</html>

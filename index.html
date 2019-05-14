@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+
+
+</script>
+</head>
+<body>
+  <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+  <img src="assets/buttons/apuddle.png" class="rock3"  id="buttonclick" onclick="onClick()">
+
+  <div id="gemAndCalle"></div>
+
+
+    <video autoplay muted loop id="myVideo">
+    <source src="assets/videos/asfalt.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel2.js"></script>
+
+<script>
+var clicks = 0;
+var linkOne = `<a href="p1.html" onclick="javascript:void window.open('p1.html','pu1','width=700,height=500,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">Yes</a>`;
+
+
+
+ function onClick() {
+   clicks += 1;
+   var message = "";
+   if(clicks==1)
+     { message = "This text consists of some tangled extracts from an conversation with Cem Eskinazi";}
+else if(clicks==2)
+   {message ="What is a strange loop?";}
+else if(clicks==3)
+   {message ="Do you want me to tell you that?";}
+else if(clicks==4)
+     {message = "Yes try to explain it";}
+else if(clicks==5)
+     {message = "Ok. I mean it is very complicated, but I like to think of Paradoxes. It is an easy way to wrap your mind around in a loop.";}
+else if(clicks==6)
+     {message = "Do you have an example?";}
+else if(clicks==7)
+     {message = linkOne}
+   document.getElementById("gemAndCalle").innerHTML = message;
+
+
+ };
+</script>
+
+</html>

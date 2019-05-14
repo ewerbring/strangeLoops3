@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+
+
+</script>
+</head>
+<body>
+  <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+  <img src="assets/buttons/cloud.png" class="cloud"  id="showill" onclick="onClick()">
+
+  <img src="assets/stair1.png" class="ill ill2"  id="showill" onclick="onClick()">
+  <img src="assets/hand1.jpg" class="ill ill3"  id="showill" onclick="onClick()">
+
+  <p id="gemAndCalle" >oh you mean like the impossible stair?
+</p>
+
+  </p>
+
+
+    <video autoplay muted loop id="myVideo">
+    <source src="assets/videos/sprinkler.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel2.js"></script>
+
+<script>
+var clicks = 0;
+var linkOne = `<a href="rock.html" onclick="javascript:void window.open('stone.html','popup','toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">This</a>`;
+
+
+
+ function onClick() {
+   clicks += 1;
+   var message = "Its another illusion, but in sound waves. Look at " + linkOne + " graphic, it is amazing.";
+   if(clicks==1)
+     { message = "Exactly.";}
+else if(clicks==2)
+   {message ="I was thinking about that. Those illusions. Just like the shepards tone.";}
+else if(clicks==3)
+   {message ="The what?";}
+
+   document.getElementById("gemAndCalle").innerHTML = message;
+
+
+ };
+</script>
+</html>

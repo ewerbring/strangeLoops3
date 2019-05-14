@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+
+
+
+</head>
+<body>
+  <div class="hbox1"></div>
+
+  <p id="message" ><a class="p1"
+    target="_blank" onclick="popupwindow('index2.html', 'popup', 'height=800, width=700'); return false;">After understanding a s</a>
+    popup is true
+</p>
+
+
+
+
+  <video autoplay muted loop id="myVideo">
+    <source src="assets/sky.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel.js"></script>
+<script>
+function popupwindow(url, title, w, h) {
+  var left = (screen.width/2)-(w/2);
+  var top = (screen.height/2)-(h/2);
+  return window.open(url, title, 'width='+w+', height='+h+', top='+top+', left='+left);
+}
+
+</script>
+</html>

@@ -1,0 +1,222 @@
+
+
+@font-face {
+	font-family: 'HelveicaOut';
+	src: url('fonts/HelveNeuBolOut');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body{
+  overflow: hidden;
+  margin: 0;
+  }
+
+
+
+
+	#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  z-index: -100;
+    border: 0.1px solid rgba(0,0,0,.1);
+}
+
+	#gemAndCalle {
+	    height: auto;
+	    width: 800px;
+	    position: fixed;
+	    bottom: 80px;
+	    left: 10%;
+	    margin-left: ;
+	    overflow-y: hidden;
+	    text-align: left;
+	    font-family: "Open Sans", Helvetica, Arial;
+	    font-weight: bolder;
+	    font-size: 48px;
+	    color: white;
+	    -webkit-text-stroke: 1px black;
+	    paint-order: stroke fill;
+	    text-shadow: 2px 2px 2px blue;
+
+	}
+
+
+.p1{
+	text-decoration: underline;
+}
+
+	button {
+	    background-color: transparent;
+	    border: none;
+	    color: white;
+	    text-decoration: underline;
+	    padding: 0;
+	    text-align: center;
+	    font-size: 16px;
+	}
+
+	a:link {
+	    text-decoration: underline;
+	    color: lightyellow;
+			font-weight: normal;
+			color: blue;
+
+	}
+
+	a:visited {
+	    text-decoration: underline;
+	    color: white;
+
+	}
+
+	.rock3{
+		position: absolute;
+		top: 15vh;
+		left: 40vw;
+		width: 25vw;
+		opacity: 0.2;
+		cursor: pointer;
+
+	}
+	.rock4{
+		position: absolute;
+		top: 25vh;
+		left: 36vw;
+		width: 41vw;
+		opacity: 0.2;
+		cursor: pointer;
+
+	}
+
+	.bigpuddle{
+		position: absolute;
+		bottom: 0vh;
+		left: 0vw;
+		width: 61vw;
+		opacity: 0.2;
+		cursor: pointer;
+
+	}
+
+	.dice{
+		position: absolute;
+		top: 15vh;
+		left: 40vw;
+		width: 25vw;
+		opacity: 0.2;
+		cursor: pointer;
+	}
+
+	.flower{
+		position: absolute;
+		top: -15vh;
+		right: 00vw;
+		width: 40vw;
+		opacity: 0.2;
+		cursor: pointer;
+	}
+
+	.cloud{
+		position: absolute;
+		top: 0;
+		left: 00vw;
+		width: 20vw;
+		opacity: 0.2;
+		cursor: pointer;
+	}
+
+.rock3:hover{
+	opacity: 1;
+}
+.rock4:hover{
+	opacity: 1;
+}
+.bigpuddle:hover{
+	opacity: 1;
+}
+.dice:hover{
+	opacity: 1;
+}
+.flower:hover{
+	opacity: 1;
+}
+
+.cloud:hover{
+	opacity: 1;
+}
+.img1{
+	position: absolute;
+	top: 20vh;
+	left: 30vw;
+	width: 20vw;
+}
+
+.ill{display: none}
+
+.ill1{
+	position: absolute;
+	width: 20vw;
+	height: auto;
+	top: 10vh;
+	left: 20vw;
+}
+.ill2{
+	position: absolute;
+	width: 20vw;
+	height: auto;
+	top: 10vh;
+	left: 70vw;
+}
+.ill3{
+	position: absolute;
+	width: 15vw;
+	height: auto;
+	top: 15vh;
+	left: 10vw;
+}
+
+.stone{
+	position: relative;
+	height: 500px;
+	animation-name: example;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	left: 0;
+	cursor: pointer;
+
+}
+#audio{
+
+	visibility: none;
+	top: 5000px;
+}
+
+@keyframes example {
+
+  100% {left:-2000px; }
+}
+
+.stonecutter {
+	position: relative;
+	font-size: 25px;
+	margin: 10px;
+	font-family: helvetica;
+	animation-name: cutter;
+	animation-duration: 300s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	top: 150px;
+}
+
+@keyframes cutter {
+
+  100% {top:-2000px; }
+}

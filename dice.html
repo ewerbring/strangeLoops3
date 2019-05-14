@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+
+
+</script>
+</head>
+<body>
+  <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+  <img src="assets/dice1.png" class="dice"  id="buttonclick" onclick="onClick()">
+
+
+  <p id="gemAndCalle" >
+</p>
+
+  </p>
+
+
+    <video autoplay muted loop id="myVideo">
+    <source src="assets/videos/sky2.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel2.js"></script>
+
+<script>
+var clicks = 0;
+var linkOne = `<a href="rock.html" onclick="javascript:void window.open('https://www.youtube.com/watch?v=zWUrwhaqq_c','p1','width=1245,height=990,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">This</a>`;
+var linkTwo = `<a href="rock.html" onclick="javascript:void window.open('illindex.html','popup','width=1245,height=990,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">illusions</a>`;
+
+
+
+ function onClick() {
+   clicks += 1;
+   var message = "";
+   if(clicks==1)
+     { message = "So the orange dice has five sides of three and one side of six. The green has three sides of two and three sides of five. The green dice has five sides of four and one side of one.";}
+else if(clicks==2)
+   {message ="And what then?";}
+else if(clicks==3)
+   {message ="The weird part about it is that statistically orange beats green. Green beats blue, BUT THEN! ";}
+else if(clicks==4)
+     {message = "blue beats orange. "+ linkOne + " video explains it a bit better.";}
+else if(clicks==5)
+     {message = "I love it. There are some real tangled hierarchies in there.";}
+else if(clicks==6)
+     {message = "That is such a nice phrase, \"tangled hierarchies.\"";}
+else if(clicks==7)
+     {message = "Yes, It's a very visual word."}
+else if(clicks==8)
+     {message = "How do you mean?"}
+else if(clicks==9)
+     {message = "Well, maybe it is because I know it is often used as an example of strange loops, but tangled hierarchies makes me think of all the different illustrative " + linkTwo;;}
+
+   document.getElementById("gemAndCalle").innerHTML = message;
+
+
+ };
+</script>
+</html>

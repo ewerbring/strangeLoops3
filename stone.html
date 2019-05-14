@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+<style>
+body {overflow-x: scroll;}
+
+</style>
+
+</script>
+</head>
+<body>
+  <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+
+  <img src="assets/stone.png" class="stone"  id="showill" onclick="onClick()">
+
+  <p id="gemAndCalle">
+</p>
+
+  </p>
+
+  <audio id="player" autoplay
+  <!-- controls -->
+  >
+    <source src="assets/stone.mp3" type="audio/mp3">
+</audio>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel2.js"></script>
+
+<script>
+var clicks = 0;
+var linkOne = `<a href="rock.html" onclick="javascript:void window.open('stone.html','p9','width=1245,height=200,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">This</a>`;
+var linkTwo = `<a href="rock.html" onclick="javascript:void window.open('logic.html','popup','width=1245,height=200,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=30vw,top=0');return false;">logic</a>`;
+
+
+
+ function onClick() {
+   clicks += 1;
+   var message = ""
+   if(clicks==1)
+     { message = "oooh wait is this a loop?";}
+else if(clicks==2)
+   {message ="Yes. There is a ten hour loop on youtube.";}
+else if(clicks==3)
+   {message ="So this is a new tone coming in from behind and seemlessly taking over?";}
+else if(clicks==4)
+     {message = "Exactly.";}
+else if(clicks==5)
+     {message = "It's interesting, another dimension of illusion. It's just like Bach.";}
+else if(clicks==6)
+     {message = "Yes. You read the whole book (Gödel, Escher and Bach), didn't you?";}
+else if(clicks==7)
+     {message = "I read most of it. But yes it's a lot."}
+else if(clicks==8)
+     {message = "But as you said, those are just illusions. Are there any real Strange Loops?";}
+else if(clicks==9)
+     {message = 'Only in '+linkTwo;}
+
+   document.getElementById("gemAndCalle").innerHTML = message;
+
+
+ };
+</script>
+
+
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of document</title>
+<link rel="stylesheet" type="text/css" href="sl.css">
+
+
+</script>
+</head>
+<body>
+  <iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+
+
+    <p id="gemAndCalle" >The  <a href="p1.html" onclick="javascript:void window.open('p2.html','pu2','width=900,height=300,toolbar=0,menubar=0,location=1,status=1,scrollbars=0,resizable=1,left=500px,top=0');return false;">second</a>
+
+      popup is a lie
+  </p>
+
+
+    <video autoplay muted loop id="myVideo">
+    <source src="assets/videos/puddle1.mp4" type="video/mp4">
+  </video>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"src="babel2.js"></script>
+<script>
+function popupwindow(url, title, w, h) {
+  var left = (screen.width/2)-(w/2);
+  var top = (screen.height/2)-(h/2);
+  return window.open(url, title, 'width='+w+', height='+h+', top='+top+', left='+left);
+}
+
+</script>
+</html>
